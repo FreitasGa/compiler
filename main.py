@@ -4,16 +4,17 @@ from lib.OneParser import OneParser
 
 
 def main():
+    input_stream = InputStream("int x = 5;")
 
-    stream = InputStream("Hi Trekkie")
+    lexer = OneLexer(input_stream)
 
-    lexer = OneLexer(stream)
-    parser = OneParser(CommonTokenStream(lexer))
+    stream = CommonTokenStream(lexer)
 
-    parse_tree = parser.parse()
-    result = parse_tree.toStringTree(recog=parser)
+    parser = OneParser(stream)
 
-    print(result)
+    parse_tree = parser.program()
+
+    print(parse_tree.toStringTree(recog=parser))
 
 
 if __name__ == '__main__':

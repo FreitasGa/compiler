@@ -16,7 +16,7 @@
         <PerGrammarGenerationSettings>
           <option name="fileName" value="$PROJECT_DIR$/One.g4" />
           <option name="autoGen" value="true" />
-          <option name="outputDir" value="D:\Coding\python\compiler\lib" />
+          <option name="outputDir" value="C:\Users\SAMSUNG\PycharmProjects\compiler\lib" />
           <option name="libDir" value="" />
           <option name="encoding" value="" />
           <option name="pkg" value="" />
@@ -29,5 +29,5 @@
   <component name="Black">
     <option name="sdkName" value="Pipenv (compiler)" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Pipenv (compiler)" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (compiler)" project-jdk-type="Python SDK" />
 </project>
