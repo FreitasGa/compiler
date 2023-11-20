@@ -82,8 +82,9 @@ multiplication : unary ((Asterisk | Slash | Percent) unary)*;
 
 unary : (Plus | Minus | Bang) unary | primary;
 
-primary : Number
-        | BoolLiteral
+primary : BoolLiteral
+        | NumberLiteral
+        | StringLiteral
         | variable_name
         | LeftParen expression RightParen;
 
@@ -94,7 +95,7 @@ type : Bool | Int | Float | String;
 variable_name : Identifier;
 
 BoolLiteral : 'true' | 'false';
-Number : Digit+ (Dot Digit+)?;
+NumberLiteral : Digit+ (Dot Digit+)?;
 StringLiteral : '"' (~["\\] | EscapeSequence)* '"';
 
 Identifier : Letter (Letter | Digit)*;
