@@ -1,4 +1,4 @@
-# Generated from C:/Users/SAMSUNG/PycharmProjects/compiler/One.g4 by ANTLR 4.13.1
+# Generated from C:/Users/gafre/Documents/Coding/python/compiler/One.g4 by ANTLR 4.13.1
 from antlr4 import *
 if "." in __name__:
     from .OneParser import OneParser
@@ -19,8 +19,8 @@ class OneVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by OneParser#variableDecl.
-    def visitVariableDecl(self, ctx:OneParser.VariableDeclContext):
+    # Visit a parse tree produced by OneParser#variable_declaration.
+    def visitVariable_declaration(self, ctx:OneParser.Variable_declarationContext):
         return self.visitChildren(ctx)
 
 
@@ -29,33 +29,33 @@ class OneVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by OneParser#functionDecl.
-    def visitFunctionDecl(self, ctx:OneParser.FunctionDeclContext):
+    # Visit a parse tree produced by OneParser#function_declaration.
+    def visitFunction_declaration(self, ctx:OneParser.Function_declarationContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by OneParser#ifStatement.
-    def visitIfStatement(self, ctx:OneParser.IfStatementContext):
+    # Visit a parse tree produced by OneParser#if_statement.
+    def visitIf_statement(self, ctx:OneParser.If_statementContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by OneParser#whileStatement.
-    def visitWhileStatement(self, ctx:OneParser.WhileStatementContext):
+    # Visit a parse tree produced by OneParser#while_statement.
+    def visitWhile_statement(self, ctx:OneParser.While_statementContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by OneParser#forStatement.
-    def visitForStatement(self, ctx:OneParser.ForStatementContext):
+    # Visit a parse tree produced by OneParser#for_statement.
+    def visitFor_statement(self, ctx:OneParser.For_statementContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by OneParser#returnStatement.
-    def visitReturnStatement(self, ctx:OneParser.ReturnStatementContext):
+    # Visit a parse tree produced by OneParser#return_statement.
+    def visitReturn_statement(self, ctx:OneParser.Return_statementContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by OneParser#expressionStatement.
-    def visitExpressionStatement(self, ctx:OneParser.ExpressionStatementContext):
+    # Visit a parse tree produced by OneParser#expression_statement.
+    def visitExpression_statement(self, ctx:OneParser.Expression_statementContext):
         return self.visitChildren(ctx)
 
 
@@ -109,8 +109,8 @@ class OneVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by OneParser#variableName.
-    def visitVariableName(self, ctx:OneParser.VariableNameContext):
+    # Visit a parse tree produced by OneParser#variable_name.
+    def visitVariable_name(self, ctx:OneParser.Variable_nameContext):
         return self.visitChildren(ctx)
 
 

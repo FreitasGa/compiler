@@ -1,81 +1,75 @@
 grammar One;
 
-// Definição dos tokens
-Assign : '=';
-Plus : '+';
-Minus : '-';
-Asterisk : '*';
-Slash : '/';
-Percent : '%';
-Bang : '!';
-Equal : '==';
-NotEqual : '!=';
-Less : '<';
-Greater : '>';
-LessEqual : '<=';
-GreaterEqual : '>=';
-And : '&&';
-Or : '||';
-Comma : ',';
-Semicolon : ';';
-Colon : ':';
-LeftParen : '(';
-RightParen : ')';
-LeftBrace : '{';
-RightBrace : '}';
-LeftBracket : '[';
-RightBracket : ']';
-If : 'if';
-Else : 'else';
-Function : 'function';
-Return : 'return';
-While : 'while';
-For : 'for';
-Bool : 'bool';
-Int : 'int';
-Float : 'float';
-String : 'string';
-Dot : '.';
+Assign: '=';
+Plus: '+';
+Minus: '-';
+Asterisk: '*';
+Slash: '/';
+Percent: '%';
+Bang: '!';
+Equal: '==';
+NotEqual: '!=';
+Less: '<';
+Greater: '>';
+LessEqual: '<=';
+GreaterEqual: '>=';
+And: '&&';
+Or: '||';
+Comma: ',';
+Semicolon: ';';
+Colon: ':';
+LeftParen: '(';
+RightParen: ')';
+LeftBrace: '{';
+RightBrace: '}';
+LeftBracket: '[';
+RightBracket: ']';
+If: 'if';
+Else: 'else';
+Function: 'function';
+Return: 'return';
+While: 'while';
+For: 'for';
+Bool: 'bool';
+Int: 'int';
+Float: 'float';
+String: 'string';
+Dot: '.';
 
 
-// Ignorar espaços e quebras de linha
-Whitespace : [ \t]+ -> skip;
-Newline : ( '\r'? '\n' | '\r' ) -> skip;
+Whitespace: [ \t]+ -> skip;
+Newline: ( '\r'? '\n' | '\r' ) -> skip;
 
-// Regras de análise sintática
 
-// Programa
 program : statement* EOF;
 
-// Comandos
-statement : variableDecl
+statement : variable_declaration
           | assignment
-          | functionDecl
-          | ifStatement
-          | whileStatement
-          | forStatement
-          | returnStatement
-          | expressionStatement;
+          | function_declaration
+          | if_statement
+          | while_statement
+          | for_statement
+          | return_statement
+          | expression_statement;
 
-variableDecl : type variableName (Assign expression)? Semicolon;
+variable_declaration : type variable_name (Assign expression)?;
 
-assignment : variableName Assign expression Semicolon;
+assignment : variable_name Assign expression;
 
-functionDecl : Function type variableName LeftParen parameters? RightParen block;
+function_declaration : type variable_name LeftParen parameters? RightParen block;
 
-ifStatement : If LeftParen expression RightParen block (Else block)?;
+if_statement : If LeftParen expression RightParen block (Else block)?;
 
-whileStatement : While LeftParen expression RightParen block;
+while_statement : While LeftParen expression RightParen block;
 
-forStatement : For LeftParen (variableDecl | assignment)? Semicolon expression? Semicolon assignment? RightParen block;
+for_statement : For LeftParen (variable_declaration | assignment)? Semicolon expression? Semicolon assignment? RightParen block;
 
-returnStatement : Return expression? Semicolon;
+return_statement : Return expression?;
 
-expressionStatement : expression Semicolon;
+expression_statement : expression;
 
 block : LeftBrace statement* RightBrace;
 
-// Expressões
 expression : equality;
 
 equality : comparison ((Equal | NotEqual) comparison)*;
@@ -90,19 +84,15 @@ unary : (Plus | Minus | Bang) unary | primary;
 
 primary : Number
         | BoolLiteral
-        | variableName
+        | variable_name
         | LeftParen expression RightParen;
 
-// Parâmetros e argumentos
-parameters : type variableName (Comma type variableName)*;
+parameters : type variable_name (Comma type variable_name)*;
 
-// Tipos de variáveis
 type : Bool | Int | Float | String;
 
-// Nomes de variáveis
-variableName : Identifier;
+variable_name : Identifier;
 
-// Literais
 BoolLiteral : 'true' | 'false';
 Number : Digit+ (Dot Digit+)?;
 StringLiteral : '"' (~["\\] | EscapeSequence)* '"';
@@ -111,5 +101,4 @@ Identifier : Letter (Letter | Digit)*;
 Digit : [0-9];
 Letter : [a-zA-Z];
 
-// Sequências de escape
 EscapeSequence : '\\' [btnr"\\];
