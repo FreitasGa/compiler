@@ -1,7 +1,56 @@
-int x = 0
-int y = 0
+int a;
+float b = 3.14;
+char c;
 
-while (x < 10) {
-    y = x * 2
-    x = x + 1
+int x = 10;
+int y = x + 5;
+float z = y * 2.5;
+
+int soma(int a, int b) {
+    return a + b;
+}
+
+void mostrar() {
+
+}
+
+for (int i = 0; i < 10; i++) {
+    // Faça algo
+}
+
+int j = 0;
+while (j < 5) {
+    // Faça algo
+    j++;
+}
+
+int numero = 10;
+if (numero > 5) {
+
+} else {
+
+}
+
+
+int multiplicar(int a, int b) {
+    return a * b;
+}
+
+int main() {
+    int a = 5;
+    int b = 10;
+    int resultado = multiplicar(a, b);
+
+    if (resultado > 20) {
+        for (int i = 0; i < resultado; i++) {
+
+        }
+    } else {
+        while (a < resultado) {
+
+            a++;
+        }
+    }
+
+    return 0;
 }

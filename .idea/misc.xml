@@ -16,7 +16,7 @@
         <PerGrammarGenerationSettings>
           <option name="fileName" value="$PROJECT_DIR$/One.g4" />
           <option name="autoGen" value="true" />
-          <option name="outputDir" value="C:\Users\gafre\Documents\Coding\python\compiler\lib" />
+          <option name="outputDir" value="C:\Users\SAMSUNG\PycharmProjects\compiler\lib" />
           <option name="libDir" value="" />
           <option name="encoding" value="" />
           <option name="pkg" value="" />
