@@ -1,56 +1,31 @@
-int a;
-float b = 3.14;
-char c;
+int a = 1
+float b = 3.14
+string c = "teste"
+bool d = true
 
-int x = 10;
-int y = x + 5;
-float z = y * 2.5;
+a = a + 2
+b = b - 2
 
-int soma(int a, int b) {
-    return a + b;
+int multiplica(int a, int b) {
+    return a * b
 }
 
-void mostrar() {
-
+float divide(float a, int b) {
+    return a / b
 }
 
-for (int i = 0; i < 10; i++) {
-    // Faça algo
-}
-
-int j = 0;
-while (j < 5) {
-    // Faça algo
-    j++;
-}
-
-int numero = 10;
-if (numero > 5) {
-
+if (a <  b) {
+    a = a + 1
 } else {
-
+    a = a - 1
 }
 
+int x = 0
 
-int multiplicar(int a, int b) {
-    return a * b;
+while(x < 10) {
+    x = x + 1
 }
 
-int main() {
-    int a = 5;
-    int b = 10;
-    int resultado = multiplicar(a, b);
-
-    if (resultado > 20) {
-        for (int i = 0; i < resultado; i++) {
-
-        }
-    } else {
-        while (a < resultado) {
-
-            a++;
-        }
-    }
-
-    return 0;
+for (int y = 0; y < 10; y = y + 1) {
+    x = x - 1
 }

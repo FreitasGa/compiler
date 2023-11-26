@@ -1,4 +1,4 @@
-# Generated from C:/Users/SAMSUNG/PycharmProjects/compiler/One.g4 by ANTLR 4.13.1
+# Generated from D:/Coding/python/compiler/One.g4 by ANTLR 4.13.1
 from antlr4 import *
 if "." in __name__:
     from .OneParser import OneParser
@@ -17,30 +17,165 @@ class OneListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by OneParser#functionDecl.
-    def enterFunctionDecl(self, ctx:OneParser.FunctionDeclContext):
+    # Enter a parse tree produced by OneParser#statement.
+    def enterStatement(self, ctx:OneParser.StatementContext):
         pass
 
-    # Exit a parse tree produced by OneParser#functionDecl.
-    def exitFunctionDecl(self, ctx:OneParser.FunctionDeclContext):
-        pass
-
-
-    # Enter a parse tree produced by OneParser#params.
-    def enterParams(self, ctx:OneParser.ParamsContext):
-        pass
-
-    # Exit a parse tree produced by OneParser#params.
-    def exitParams(self, ctx:OneParser.ParamsContext):
+    # Exit a parse tree produced by OneParser#statement.
+    def exitStatement(self, ctx:OneParser.StatementContext):
         pass
 
 
-    # Enter a parse tree produced by OneParser#param.
-    def enterParam(self, ctx:OneParser.ParamContext):
+    # Enter a parse tree produced by OneParser#variable_declaration.
+    def enterVariable_declaration(self, ctx:OneParser.Variable_declarationContext):
         pass
 
-    # Exit a parse tree produced by OneParser#param.
-    def exitParam(self, ctx:OneParser.ParamContext):
+    # Exit a parse tree produced by OneParser#variable_declaration.
+    def exitVariable_declaration(self, ctx:OneParser.Variable_declarationContext):
+        pass
+
+
+    # Enter a parse tree produced by OneParser#assignment.
+    def enterAssignment(self, ctx:OneParser.AssignmentContext):
+        pass
+
+    # Exit a parse tree produced by OneParser#assignment.
+    def exitAssignment(self, ctx:OneParser.AssignmentContext):
+        pass
+
+
+    # Enter a parse tree produced by OneParser#function_declaration.
+    def enterFunction_declaration(self, ctx:OneParser.Function_declarationContext):
+        pass
+
+    # Exit a parse tree produced by OneParser#function_declaration.
+    def exitFunction_declaration(self, ctx:OneParser.Function_declarationContext):
+        pass
+
+
+    # Enter a parse tree produced by OneParser#if_statement.
+    def enterIf_statement(self, ctx:OneParser.If_statementContext):
+        pass
+
+    # Exit a parse tree produced by OneParser#if_statement.
+    def exitIf_statement(self, ctx:OneParser.If_statementContext):
+        pass
+
+
+    # Enter a parse tree produced by OneParser#while_statement.
+    def enterWhile_statement(self, ctx:OneParser.While_statementContext):
+        pass
+
+    # Exit a parse tree produced by OneParser#while_statement.
+    def exitWhile_statement(self, ctx:OneParser.While_statementContext):
+        pass
+
+
+    # Enter a parse tree produced by OneParser#for_statement.
+    def enterFor_statement(self, ctx:OneParser.For_statementContext):
+        pass
+
+    # Exit a parse tree produced by OneParser#for_statement.
+    def exitFor_statement(self, ctx:OneParser.For_statementContext):
+        pass
+
+
+    # Enter a parse tree produced by OneParser#return_statement.
+    def enterReturn_statement(self, ctx:OneParser.Return_statementContext):
+        pass
+
+    # Exit a parse tree produced by OneParser#return_statement.
+    def exitReturn_statement(self, ctx:OneParser.Return_statementContext):
+        pass
+
+
+    # Enter a parse tree produced by OneParser#expression_statement.
+    def enterExpression_statement(self, ctx:OneParser.Expression_statementContext):
+        pass
+
+    # Exit a parse tree produced by OneParser#expression_statement.
+    def exitExpression_statement(self, ctx:OneParser.Expression_statementContext):
+        pass
+
+
+    # Enter a parse tree produced by OneParser#block.
+    def enterBlock(self, ctx:OneParser.BlockContext):
+        pass
+
+    # Exit a parse tree produced by OneParser#block.
+    def exitBlock(self, ctx:OneParser.BlockContext):
+        pass
+
+
+    # Enter a parse tree produced by OneParser#expression.
+    def enterExpression(self, ctx:OneParser.ExpressionContext):
+        pass
+
+    # Exit a parse tree produced by OneParser#expression.
+    def exitExpression(self, ctx:OneParser.ExpressionContext):
+        pass
+
+
+    # Enter a parse tree produced by OneParser#equality.
+    def enterEquality(self, ctx:OneParser.EqualityContext):
+        pass
+
+    # Exit a parse tree produced by OneParser#equality.
+    def exitEquality(self, ctx:OneParser.EqualityContext):
+        pass
+
+
+    # Enter a parse tree produced by OneParser#comparison.
+    def enterComparison(self, ctx:OneParser.ComparisonContext):
+        pass
+
+    # Exit a parse tree produced by OneParser#comparison.
+    def exitComparison(self, ctx:OneParser.ComparisonContext):
+        pass
+
+
+    # Enter a parse tree produced by OneParser#addition.
+    def enterAddition(self, ctx:OneParser.AdditionContext):
+        pass
+
+    # Exit a parse tree produced by OneParser#addition.
+    def exitAddition(self, ctx:OneParser.AdditionContext):
+        pass
+
+
+    # Enter a parse tree produced by OneParser#multiplication.
+    def enterMultiplication(self, ctx:OneParser.MultiplicationContext):
+        pass
+
+    # Exit a parse tree produced by OneParser#multiplication.
+    def exitMultiplication(self, ctx:OneParser.MultiplicationContext):
+        pass
+
+
+    # Enter a parse tree produced by OneParser#unary.
+    def enterUnary(self, ctx:OneParser.UnaryContext):
+        pass
+
+    # Exit a parse tree produced by OneParser#unary.
+    def exitUnary(self, ctx:OneParser.UnaryContext):
+        pass
+
+
+    # Enter a parse tree produced by OneParser#primary.
+    def enterPrimary(self, ctx:OneParser.PrimaryContext):
+        pass
+
+    # Exit a parse tree produced by OneParser#primary.
+    def exitPrimary(self, ctx:OneParser.PrimaryContext):
+        pass
+
+
+    # Enter a parse tree produced by OneParser#parameters.
+    def enterParameters(self, ctx:OneParser.ParametersContext):
+        pass
+
+    # Exit a parse tree produced by OneParser#parameters.
+    def exitParameters(self, ctx:OneParser.ParametersContext):
         pass
 
 
@@ -53,84 +188,12 @@ class OneListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by OneParser#varDecl.
-    def enterVarDecl(self, ctx:OneParser.VarDeclContext):
+    # Enter a parse tree produced by OneParser#variable_name.
+    def enterVariable_name(self, ctx:OneParser.Variable_nameContext):
         pass
 
-    # Exit a parse tree produced by OneParser#varDecl.
-    def exitVarDecl(self, ctx:OneParser.VarDeclContext):
-        pass
-
-
-    # Enter a parse tree produced by OneParser#compoundStmt.
-    def enterCompoundStmt(self, ctx:OneParser.CompoundStmtContext):
-        pass
-
-    # Exit a parse tree produced by OneParser#compoundStmt.
-    def exitCompoundStmt(self, ctx:OneParser.CompoundStmtContext):
-        pass
-
-
-    # Enter a parse tree produced by OneParser#stmt.
-    def enterStmt(self, ctx:OneParser.StmtContext):
-        pass
-
-    # Exit a parse tree produced by OneParser#stmt.
-    def exitStmt(self, ctx:OneParser.StmtContext):
-        pass
-
-
-    # Enter a parse tree produced by OneParser#exprStmt.
-    def enterExprStmt(self, ctx:OneParser.ExprStmtContext):
-        pass
-
-    # Exit a parse tree produced by OneParser#exprStmt.
-    def exitExprStmt(self, ctx:OneParser.ExprStmtContext):
-        pass
-
-
-    # Enter a parse tree produced by OneParser#expr.
-    def enterExpr(self, ctx:OneParser.ExprContext):
-        pass
-
-    # Exit a parse tree produced by OneParser#expr.
-    def exitExpr(self, ctx:OneParser.ExprContext):
-        pass
-
-
-    # Enter a parse tree produced by OneParser#ifStmt.
-    def enterIfStmt(self, ctx:OneParser.IfStmtContext):
-        pass
-
-    # Exit a parse tree produced by OneParser#ifStmt.
-    def exitIfStmt(self, ctx:OneParser.IfStmtContext):
-        pass
-
-
-    # Enter a parse tree produced by OneParser#forStmt.
-    def enterForStmt(self, ctx:OneParser.ForStmtContext):
-        pass
-
-    # Exit a parse tree produced by OneParser#forStmt.
-    def exitForStmt(self, ctx:OneParser.ForStmtContext):
-        pass
-
-
-    # Enter a parse tree produced by OneParser#whileStmt.
-    def enterWhileStmt(self, ctx:OneParser.WhileStmtContext):
-        pass
-
-    # Exit a parse tree produced by OneParser#whileStmt.
-    def exitWhileStmt(self, ctx:OneParser.WhileStmtContext):
-        pass
-
-
-    # Enter a parse tree produced by OneParser#returnStmt.
-    def enterReturnStmt(self, ctx:OneParser.ReturnStmtContext):
-        pass
-
-    # Exit a parse tree produced by OneParser#returnStmt.
-    def exitReturnStmt(self, ctx:OneParser.ReturnStmtContext):
+    # Exit a parse tree produced by OneParser#variable_name.
+    def exitVariable_name(self, ctx:OneParser.Variable_nameContext):
         pass
 
 
