@@ -1,4 +1,4 @@
-# Generated from D:/Coding/python/compiler/One.g4 by ANTLR 4.13.1
+# Generated from C:/Users/gafre/Documents/Coding/python/compiler/One.g4 by ANTLR 4.13.1
 from antlr4 import *
 if "." in __name__:
     from .OneParser import OneParser
@@ -101,11 +101,6 @@ class OneVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by OneParser#parameters.
     def visitParameters(self, ctx:OneParser.ParametersContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by OneParser#type.
-    def visitType(self, ctx:OneParser.TypeContext):
         return self.visitChildren(ctx)
 
 

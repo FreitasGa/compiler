@@ -1,4 +1,4 @@
-# Generated from D:/Coding/python/compiler/One.g4 by ANTLR 4.13.1
+# Generated from C:/Users/gafre/Documents/Coding/python/compiler/One.g4 by ANTLR 4.13.1
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
@@ -10,71 +10,69 @@ else:
 
 def serializedATN():
     return [
-        4,1,44,191,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
+        4,1,34,189,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
         6,2,7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,2,12,7,12,2,13,7,13,
-        2,14,7,14,2,15,7,15,2,16,7,16,2,17,7,17,2,18,7,18,2,19,7,19,2,20,
-        7,20,1,0,5,0,44,8,0,10,0,12,0,47,9,0,1,0,1,0,1,1,1,1,1,1,1,1,1,1,
-        1,1,1,1,1,1,3,1,59,8,1,1,2,1,2,1,2,1,2,3,2,65,8,2,1,3,1,3,1,3,1,
-        3,1,4,1,4,1,4,1,4,3,4,75,8,4,1,4,1,4,1,4,1,5,1,5,1,5,1,5,1,5,1,5,
-        1,5,3,5,87,8,5,1,6,1,6,1,6,1,6,1,6,1,6,1,7,1,7,1,7,1,7,3,7,99,8,
-        7,1,7,1,7,3,7,103,8,7,1,7,1,7,3,7,107,8,7,1,7,1,7,1,7,1,8,1,8,3,
-        8,114,8,8,1,9,1,9,1,10,1,10,5,10,120,8,10,10,10,12,10,123,9,10,1,
-        10,1,10,1,11,1,11,1,12,1,12,1,12,5,12,132,8,12,10,12,12,12,135,9,
-        12,1,13,1,13,1,13,5,13,140,8,13,10,13,12,13,143,9,13,1,14,1,14,1,
-        14,5,14,148,8,14,10,14,12,14,151,9,14,1,15,1,15,1,15,5,15,156,8,
-        15,10,15,12,15,159,9,15,1,16,1,16,1,16,3,16,164,8,16,1,17,1,17,1,
-        17,1,17,1,17,1,17,1,17,1,17,3,17,174,8,17,1,18,1,18,1,18,1,18,1,
-        18,1,18,5,18,182,8,18,10,18,12,18,185,9,18,1,19,1,19,1,20,1,20,1,
-        20,0,0,21,0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,
-        40,0,6,1,0,8,9,1,0,10,13,1,0,2,3,1,0,4,6,2,0,2,3,7,7,1,0,31,34,196,
-        0,45,1,0,0,0,2,58,1,0,0,0,4,60,1,0,0,0,6,66,1,0,0,0,8,70,1,0,0,0,
-        10,79,1,0,0,0,12,88,1,0,0,0,14,94,1,0,0,0,16,111,1,0,0,0,18,115,
-        1,0,0,0,20,117,1,0,0,0,22,126,1,0,0,0,24,128,1,0,0,0,26,136,1,0,
-        0,0,28,144,1,0,0,0,30,152,1,0,0,0,32,163,1,0,0,0,34,173,1,0,0,0,
-        36,175,1,0,0,0,38,186,1,0,0,0,40,188,1,0,0,0,42,44,3,2,1,0,43,42,
-        1,0,0,0,44,47,1,0,0,0,45,43,1,0,0,0,45,46,1,0,0,0,46,48,1,0,0,0,
-        47,45,1,0,0,0,48,49,5,0,0,1,49,1,1,0,0,0,50,59,3,4,2,0,51,59,3,6,
-        3,0,52,59,3,8,4,0,53,59,3,10,5,0,54,59,3,12,6,0,55,59,3,14,7,0,56,
-        59,3,16,8,0,57,59,3,18,9,0,58,50,1,0,0,0,58,51,1,0,0,0,58,52,1,0,
-        0,0,58,53,1,0,0,0,58,54,1,0,0,0,58,55,1,0,0,0,58,56,1,0,0,0,58,57,
-        1,0,0,0,59,3,1,0,0,0,60,61,3,38,19,0,61,64,3,40,20,0,62,63,5,1,0,
-        0,63,65,3,22,11,0,64,62,1,0,0,0,64,65,1,0,0,0,65,5,1,0,0,0,66,67,
-        3,40,20,0,67,68,5,1,0,0,68,69,3,22,11,0,69,7,1,0,0,0,70,71,3,38,
-        19,0,71,72,3,40,20,0,72,74,5,19,0,0,73,75,3,36,18,0,74,73,1,0,0,
-        0,74,75,1,0,0,0,75,76,1,0,0,0,76,77,5,20,0,0,77,78,3,20,10,0,78,
-        9,1,0,0,0,79,80,5,25,0,0,80,81,5,19,0,0,81,82,3,22,11,0,82,83,5,
-        20,0,0,83,86,3,20,10,0,84,85,5,26,0,0,85,87,3,20,10,0,86,84,1,0,
-        0,0,86,87,1,0,0,0,87,11,1,0,0,0,88,89,5,29,0,0,89,90,5,19,0,0,90,
-        91,3,22,11,0,91,92,5,20,0,0,92,93,3,20,10,0,93,13,1,0,0,0,94,95,
-        5,30,0,0,95,98,5,19,0,0,96,99,3,4,2,0,97,99,3,6,3,0,98,96,1,0,0,
-        0,98,97,1,0,0,0,98,99,1,0,0,0,99,100,1,0,0,0,100,102,5,17,0,0,101,
-        103,3,22,11,0,102,101,1,0,0,0,102,103,1,0,0,0,103,104,1,0,0,0,104,
-        106,5,17,0,0,105,107,3,6,3,0,106,105,1,0,0,0,106,107,1,0,0,0,107,
-        108,1,0,0,0,108,109,5,20,0,0,109,110,3,20,10,0,110,15,1,0,0,0,111,
-        113,5,28,0,0,112,114,3,22,11,0,113,112,1,0,0,0,113,114,1,0,0,0,114,
-        17,1,0,0,0,115,116,3,22,11,0,116,19,1,0,0,0,117,121,5,21,0,0,118,
-        120,3,2,1,0,119,118,1,0,0,0,120,123,1,0,0,0,121,119,1,0,0,0,121,
-        122,1,0,0,0,122,124,1,0,0,0,123,121,1,0,0,0,124,125,5,22,0,0,125,
-        21,1,0,0,0,126,127,3,24,12,0,127,23,1,0,0,0,128,133,3,26,13,0,129,
-        130,7,0,0,0,130,132,3,26,13,0,131,129,1,0,0,0,132,135,1,0,0,0,133,
-        131,1,0,0,0,133,134,1,0,0,0,134,25,1,0,0,0,135,133,1,0,0,0,136,141,
-        3,28,14,0,137,138,7,1,0,0,138,140,3,28,14,0,139,137,1,0,0,0,140,
-        143,1,0,0,0,141,139,1,0,0,0,141,142,1,0,0,0,142,27,1,0,0,0,143,141,
-        1,0,0,0,144,149,3,30,15,0,145,146,7,2,0,0,146,148,3,30,15,0,147,
-        145,1,0,0,0,148,151,1,0,0,0,149,147,1,0,0,0,149,150,1,0,0,0,150,
-        29,1,0,0,0,151,149,1,0,0,0,152,157,3,32,16,0,153,154,7,3,0,0,154,
-        156,3,32,16,0,155,153,1,0,0,0,156,159,1,0,0,0,157,155,1,0,0,0,157,
-        158,1,0,0,0,158,31,1,0,0,0,159,157,1,0,0,0,160,161,7,4,0,0,161,164,
-        3,32,16,0,162,164,3,34,17,0,163,160,1,0,0,0,163,162,1,0,0,0,164,
-        33,1,0,0,0,165,174,5,38,0,0,166,174,5,39,0,0,167,174,5,40,0,0,168,
-        174,3,40,20,0,169,170,5,19,0,0,170,171,3,22,11,0,171,172,5,20,0,
-        0,172,174,1,0,0,0,173,165,1,0,0,0,173,166,1,0,0,0,173,167,1,0,0,
-        0,173,168,1,0,0,0,173,169,1,0,0,0,174,35,1,0,0,0,175,176,3,38,19,
-        0,176,183,3,40,20,0,177,178,5,16,0,0,178,179,3,38,19,0,179,180,3,
-        40,20,0,180,182,1,0,0,0,181,177,1,0,0,0,182,185,1,0,0,0,183,181,
-        1,0,0,0,183,184,1,0,0,0,184,37,1,0,0,0,185,183,1,0,0,0,186,187,7,
-        5,0,0,187,39,1,0,0,0,188,189,5,41,0,0,189,41,1,0,0,0,17,45,58,64,
-        74,86,98,102,106,113,121,133,141,149,157,163,173,183
+        2,14,7,14,2,15,7,15,2,16,7,16,2,17,7,17,2,18,7,18,2,19,7,19,1,0,
+        5,0,42,8,0,10,0,12,0,45,9,0,1,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+        1,1,3,1,57,8,1,1,2,1,2,1,2,1,2,3,2,63,8,2,1,2,1,2,1,3,1,3,1,3,1,
+        3,1,3,1,4,1,4,1,4,1,4,3,4,76,8,4,1,4,1,4,1,4,1,5,1,5,1,5,1,5,1,5,
+        1,5,1,5,3,5,88,8,5,1,6,1,6,1,6,1,6,1,6,1,6,1,7,1,7,1,7,1,7,3,7,100,
+        8,7,1,7,1,7,1,7,1,7,1,7,1,7,1,7,1,7,1,8,1,8,3,8,112,8,8,1,8,1,8,
+        1,9,1,9,1,9,1,10,1,10,5,10,121,8,10,10,10,12,10,124,9,10,1,10,1,
+        10,1,11,1,11,1,12,1,12,1,12,5,12,133,8,12,10,12,12,12,136,9,12,1,
+        13,1,13,1,13,5,13,141,8,13,10,13,12,13,144,9,13,1,14,1,14,1,14,5,
+        14,149,8,14,10,14,12,14,152,9,14,1,15,1,15,1,15,5,15,157,8,15,10,
+        15,12,15,160,9,15,1,16,1,16,1,16,3,16,165,8,16,1,17,1,17,1,17,1,
+        17,1,17,1,17,1,17,1,17,3,17,175,8,17,1,18,1,18,1,18,1,18,1,18,5,
+        18,182,8,18,10,18,12,18,185,9,18,1,19,1,19,1,19,0,0,20,0,2,4,6,8,
+        10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,0,1,2,0,2,2,26,26,192,
+        0,43,1,0,0,0,2,56,1,0,0,0,4,58,1,0,0,0,6,66,1,0,0,0,8,71,1,0,0,0,
+        10,80,1,0,0,0,12,89,1,0,0,0,14,95,1,0,0,0,16,109,1,0,0,0,18,115,
+        1,0,0,0,20,118,1,0,0,0,22,127,1,0,0,0,24,129,1,0,0,0,26,137,1,0,
+        0,0,28,145,1,0,0,0,30,153,1,0,0,0,32,164,1,0,0,0,34,174,1,0,0,0,
+        36,176,1,0,0,0,38,186,1,0,0,0,40,42,3,2,1,0,41,40,1,0,0,0,42,45,
+        1,0,0,0,43,41,1,0,0,0,43,44,1,0,0,0,44,46,1,0,0,0,45,43,1,0,0,0,
+        46,47,5,0,0,1,47,1,1,0,0,0,48,57,3,4,2,0,49,57,3,6,3,0,50,57,3,8,
+        4,0,51,57,3,10,5,0,52,57,3,12,6,0,53,57,3,14,7,0,54,57,3,16,8,0,
+        55,57,3,18,9,0,56,48,1,0,0,0,56,49,1,0,0,0,56,50,1,0,0,0,56,51,1,
+        0,0,0,56,52,1,0,0,0,56,53,1,0,0,0,56,54,1,0,0,0,56,55,1,0,0,0,57,
+        3,1,0,0,0,58,59,5,23,0,0,59,62,3,38,19,0,60,61,5,1,0,0,61,63,3,22,
+        11,0,62,60,1,0,0,0,62,63,1,0,0,0,63,64,1,0,0,0,64,65,5,6,0,0,65,
+        5,1,0,0,0,66,67,3,38,19,0,67,68,5,1,0,0,68,69,3,22,11,0,69,70,5,
+        6,0,0,70,7,1,0,0,0,71,72,5,23,0,0,72,73,3,38,19,0,73,75,5,8,0,0,
+        74,76,3,36,18,0,75,74,1,0,0,0,75,76,1,0,0,0,76,77,1,0,0,0,77,78,
+        5,9,0,0,78,79,3,20,10,0,79,9,1,0,0,0,80,81,5,14,0,0,81,82,5,8,0,
+        0,82,83,3,22,11,0,83,84,5,9,0,0,84,87,3,20,10,0,85,86,5,15,0,0,86,
+        88,3,20,10,0,87,85,1,0,0,0,87,88,1,0,0,0,88,11,1,0,0,0,89,90,5,18,
+        0,0,90,91,5,8,0,0,91,92,3,22,11,0,92,93,5,9,0,0,93,94,3,20,10,0,
+        94,13,1,0,0,0,95,96,5,19,0,0,96,99,5,8,0,0,97,100,3,4,2,0,98,100,
+        3,6,3,0,99,97,1,0,0,0,99,98,1,0,0,0,100,101,1,0,0,0,101,102,3,22,
+        11,0,102,103,5,6,0,0,103,104,3,38,19,0,104,105,5,1,0,0,105,106,3,
+        22,11,0,106,107,5,9,0,0,107,108,3,20,10,0,108,15,1,0,0,0,109,111,
+        5,17,0,0,110,112,3,22,11,0,111,110,1,0,0,0,111,112,1,0,0,0,112,113,
+        1,0,0,0,113,114,5,6,0,0,114,17,1,0,0,0,115,116,3,22,11,0,116,117,
+        5,6,0,0,117,19,1,0,0,0,118,122,5,10,0,0,119,121,3,2,1,0,120,119,
+        1,0,0,0,121,124,1,0,0,0,122,120,1,0,0,0,122,123,1,0,0,0,123,125,
+        1,0,0,0,124,122,1,0,0,0,125,126,5,11,0,0,126,21,1,0,0,0,127,128,
+        3,24,12,0,128,23,1,0,0,0,129,134,3,26,13,0,130,131,5,24,0,0,131,
+        133,3,26,13,0,132,130,1,0,0,0,133,136,1,0,0,0,134,132,1,0,0,0,134,
+        135,1,0,0,0,135,25,1,0,0,0,136,134,1,0,0,0,137,142,3,28,14,0,138,
+        139,5,25,0,0,139,141,3,28,14,0,140,138,1,0,0,0,141,144,1,0,0,0,142,
+        140,1,0,0,0,142,143,1,0,0,0,143,27,1,0,0,0,144,142,1,0,0,0,145,150,
+        3,30,15,0,146,147,5,26,0,0,147,149,3,30,15,0,148,146,1,0,0,0,149,
+        152,1,0,0,0,150,148,1,0,0,0,150,151,1,0,0,0,151,29,1,0,0,0,152,150,
+        1,0,0,0,153,158,3,32,16,0,154,155,5,27,0,0,155,157,3,32,16,0,156,
+        154,1,0,0,0,157,160,1,0,0,0,158,156,1,0,0,0,158,159,1,0,0,0,159,
+        31,1,0,0,0,160,158,1,0,0,0,161,162,7,0,0,0,162,165,3,32,16,0,163,
+        165,3,34,17,0,164,161,1,0,0,0,164,163,1,0,0,0,165,33,1,0,0,0,166,
+        175,5,28,0,0,167,175,5,29,0,0,168,175,5,30,0,0,169,175,3,38,19,0,
+        170,171,5,8,0,0,171,172,3,22,11,0,172,173,5,9,0,0,173,175,1,0,0,
+        0,174,166,1,0,0,0,174,167,1,0,0,0,174,168,1,0,0,0,174,169,1,0,0,
+        0,174,170,1,0,0,0,175,35,1,0,0,0,176,177,5,23,0,0,177,183,3,38,19,
+        0,178,179,5,5,0,0,179,180,5,23,0,0,180,182,3,38,19,0,181,178,1,0,
+        0,0,182,185,1,0,0,0,183,181,1,0,0,0,183,184,1,0,0,0,184,37,1,0,0,
+        0,185,183,1,0,0,0,186,187,5,31,0,0,187,39,1,0,0,0,15,43,56,62,75,
+        87,99,111,122,134,142,150,158,164,174,183
     ]
 
 class OneParser ( Parser ):
@@ -87,22 +85,19 @@ class OneParser ( Parser ):
 
     sharedContextCache = PredictionContextCache()
 
-    literalNames = [ "<INVALID>", "'='", "'+'", "'-'", "'*'", "'/'", "'%'", 
-                     "'!'", "'=='", "'!='", "'<'", "'>'", "'<='", "'>='", 
-                     "'&&'", "'||'", "','", "';'", "':'", "'('", "')'", 
-                     "'{'", "'}'", "'['", "']'", "'if'", "'else'", "'function'", 
-                     "'return'", "'while'", "'for'", "'bool'", "'int'", 
-                     "'float'", "'string'", "'.'" ]
+    literalNames = [ "<INVALID>", "'='", "'!'", "'&&'", "'||'", "','", "';'", 
+                     "':'", "'('", "')'", "'{'", "'}'", "'['", "']'", "'if'", 
+                     "'else'", "'function'", "'return'", "'while'", "'for'", 
+                     "'.'" ]
 
-    symbolicNames = [ "<INVALID>", "Assign", "Plus", "Minus", "Asterisk", 
-                      "Slash", "Percent", "Bang", "Equal", "NotEqual", "Less", 
-                      "Greater", "LessEqual", "GreaterEqual", "And", "Or", 
-                      "Comma", "Semicolon", "Colon", "LeftParen", "RightParen", 
-                      "LeftBrace", "RightBrace", "LeftBracket", "RightBracket", 
-                      "If", "Else", "Function", "Return", "While", "For", 
-                      "Bool", "Int", "Float", "String", "Dot", "Whitespace", 
-                      "Newline", "BoolLiteral", "NumberLiteral", "StringLiteral", 
-                      "Identifier", "Digit", "Letter", "EscapeSequence" ]
+    symbolicNames = [ "<INVALID>", "Assign", "Bang", "And", "Or", "Comma", 
+                      "Semicolon", "Colon", "LeftParen", "RightParen", "LeftBrace", 
+                      "RightBrace", "LeftBracket", "RightBracket", "If", 
+                      "Else", "Function", "Return", "While", "For", "Dot", 
+                      "Whitespace", "Newline", "Types", "EqualityOperation", 
+                      "ComparisonOperation", "AdditionOperation", "MultiplicationOperation", 
+                      "BoolLiteral", "NumberLiteral", "StringLiteral", "Identifier", 
+                      "Digit", "Letter", "EscapeSequence" ]
 
     RULE_program = 0
     RULE_statement = 1
@@ -123,61 +118,49 @@ class OneParser ( Parser ):
     RULE_unary = 16
     RULE_primary = 17
     RULE_parameters = 18
-    RULE_type = 19
-    RULE_variable_name = 20
+    RULE_variable_name = 19
 
     ruleNames =  [ "program", "statement", "variable_declaration", "assignment", 
                    "function_declaration", "if_statement", "while_statement", 
                    "for_statement", "return_statement", "expression_statement", 
                    "block", "expression", "equality", "comparison", "addition", 
-                   "multiplication", "unary", "primary", "parameters", "type", 
-                   "variable_name" ]
+                   "multiplication", "unary", "primary", "parameters", "variable_name" ]
 
     EOF = Token.EOF
     Assign=1
-    Plus=2
-    Minus=3
-    Asterisk=4
-    Slash=5
-    Percent=6
-    Bang=7
-    Equal=8
-    NotEqual=9
-    Less=10
-    Greater=11
-    LessEqual=12
-    GreaterEqual=13
-    And=14
-    Or=15
-    Comma=16
-    Semicolon=17
-    Colon=18
-    LeftParen=19
-    RightParen=20
-    LeftBrace=21
-    RightBrace=22
-    LeftBracket=23
-    RightBracket=24
-    If=25
-    Else=26
-    Function=27
-    Return=28
-    While=29
-    For=30
-    Bool=31
-    Int=32
-    Float=33
-    String=34
-    Dot=35
-    Whitespace=36
-    Newline=37
-    BoolLiteral=38
-    NumberLiteral=39
-    StringLiteral=40
-    Identifier=41
-    Digit=42
-    Letter=43
-    EscapeSequence=44
+    Bang=2
+    And=3
+    Or=4
+    Comma=5
+    Semicolon=6
+    Colon=7
+    LeftParen=8
+    RightParen=9
+    LeftBrace=10
+    RightBrace=11
+    LeftBracket=12
+    RightBracket=13
+    If=14
+    Else=15
+    Function=16
+    Return=17
+    While=18
+    For=19
+    Dot=20
+    Whitespace=21
+    Newline=22
+    Types=23
+    EqualityOperation=24
+    ComparisonOperation=25
+    AdditionOperation=26
+    MultiplicationOperation=27
+    BoolLiteral=28
+    NumberLiteral=29
+    StringLiteral=30
+    Identifier=31
+    Digit=32
+    Letter=33
+    EscapeSequence=34
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
@@ -232,17 +215,17 @@ class OneParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 45
+            self.state = 43
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 4157293985932) != 0):
-                self.state = 42
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 4102963460) != 0):
+                self.state = 40
                 self.statement()
-                self.state = 47
+                self.state = 45
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
-            self.state = 48
+            self.state = 46
             self.match(OneParser.EOF)
         except RecognitionException as re:
             localctx.exception = re
@@ -317,54 +300,54 @@ class OneParser ( Parser ):
         localctx = OneParser.StatementContext(self, self._ctx, self.state)
         self.enterRule(localctx, 2, self.RULE_statement)
         try:
-            self.state = 58
+            self.state = 56
             self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,1,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 50
+                self.state = 48
                 self.variable_declaration()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 51
+                self.state = 49
                 self.assignment()
                 pass
 
             elif la_ == 3:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 52
+                self.state = 50
                 self.function_declaration()
                 pass
 
             elif la_ == 4:
                 self.enterOuterAlt(localctx, 4)
-                self.state = 53
+                self.state = 51
                 self.if_statement()
                 pass
 
             elif la_ == 5:
                 self.enterOuterAlt(localctx, 5)
-                self.state = 54
+                self.state = 52
                 self.while_statement()
                 pass
 
             elif la_ == 6:
                 self.enterOuterAlt(localctx, 6)
-                self.state = 55
+                self.state = 53
                 self.for_statement()
                 pass
 
             elif la_ == 7:
                 self.enterOuterAlt(localctx, 7)
-                self.state = 56
+                self.state = 54
                 self.return_statement()
                 pass
 
             elif la_ == 8:
                 self.enterOuterAlt(localctx, 8)
-                self.state = 57
+                self.state = 55
                 self.expression_statement()
                 pass
 
@@ -385,13 +368,15 @@ class OneParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def type_(self):
-            return self.getTypedRuleContext(OneParser.TypeContext,0)
-
+        def Types(self):
+            return self.getToken(OneParser.Types, 0)
 
         def variable_name(self):
             return self.getTypedRuleContext(OneParser.Variable_nameContext,0)
 
+
+        def Semicolon(self):
+            return self.getToken(OneParser.Semicolon, 0)
 
         def Assign(self):
             return self.getToken(OneParser.Assign, 0)
@@ -427,20 +412,22 @@ class OneParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 60
-            self.type_()
-            self.state = 61
+            self.state = 58
+            self.match(OneParser.Types)
+            self.state = 59
             self.variable_name()
-            self.state = 64
+            self.state = 62
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==1:
-                self.state = 62
+                self.state = 60
                 self.match(OneParser.Assign)
-                self.state = 63
+                self.state = 61
                 self.expression()
 
 
+            self.state = 64
+            self.match(OneParser.Semicolon)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -467,6 +454,9 @@ class OneParser ( Parser ):
         def expression(self):
             return self.getTypedRuleContext(OneParser.ExpressionContext,0)
 
+
+        def Semicolon(self):
+            return self.getToken(OneParser.Semicolon, 0)
 
         def getRuleIndex(self):
             return OneParser.RULE_assignment
@@ -500,6 +490,8 @@ class OneParser ( Parser ):
             self.match(OneParser.Assign)
             self.state = 68
             self.expression()
+            self.state = 69
+            self.match(OneParser.Semicolon)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -516,9 +508,8 @@ class OneParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def type_(self):
-            return self.getTypedRuleContext(OneParser.TypeContext,0)
-
+        def Types(self):
+            return self.getToken(OneParser.Types, 0)
 
         def variable_name(self):
             return self.getTypedRuleContext(OneParser.Variable_nameContext,0)
@@ -565,23 +556,23 @@ class OneParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 70
-            self.type_()
             self.state = 71
-            self.variable_name()
+            self.match(OneParser.Types)
             self.state = 72
+            self.variable_name()
+            self.state = 73
             self.match(OneParser.LeftParen)
-            self.state = 74
+            self.state = 75
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if (((_la) & ~0x3f) == 0 and ((1 << _la) & 32212254720) != 0):
-                self.state = 73
+            if _la==23:
+                self.state = 74
                 self.parameters()
 
 
-            self.state = 76
-            self.match(OneParser.RightParen)
             self.state = 77
+            self.match(OneParser.RightParen)
+            self.state = 78
             self.block()
         except RecognitionException as re:
             localctx.exception = re
@@ -649,23 +640,23 @@ class OneParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 79
-            self.match(OneParser.If)
             self.state = 80
-            self.match(OneParser.LeftParen)
+            self.match(OneParser.If)
             self.state = 81
-            self.expression()
+            self.match(OneParser.LeftParen)
             self.state = 82
-            self.match(OneParser.RightParen)
+            self.expression()
             self.state = 83
+            self.match(OneParser.RightParen)
+            self.state = 84
             self.block()
-            self.state = 86
+            self.state = 87
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==26:
-                self.state = 84
-                self.match(OneParser.Else)
+            if _la==15:
                 self.state = 85
+                self.match(OneParser.Else)
+                self.state = 86
                 self.block()
 
 
@@ -728,15 +719,15 @@ class OneParser ( Parser ):
         self.enterRule(localctx, 12, self.RULE_while_statement)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 88
-            self.match(OneParser.While)
             self.state = 89
-            self.match(OneParser.LeftParen)
+            self.match(OneParser.While)
             self.state = 90
-            self.expression()
+            self.match(OneParser.LeftParen)
             self.state = 91
-            self.match(OneParser.RightParen)
+            self.expression()
             self.state = 92
+            self.match(OneParser.RightParen)
+            self.state = 93
             self.block()
         except RecognitionException as re:
             localctx.exception = re
@@ -760,11 +751,22 @@ class OneParser ( Parser ):
         def LeftParen(self):
             return self.getToken(OneParser.LeftParen, 0)
 
-        def Semicolon(self, i:int=None):
+        def expression(self, i:int=None):
             if i is None:
-                return self.getTokens(OneParser.Semicolon)
+                return self.getTypedRuleContexts(OneParser.ExpressionContext)
             else:
-                return self.getToken(OneParser.Semicolon, i)
+                return self.getTypedRuleContext(OneParser.ExpressionContext,i)
+
+
+        def Semicolon(self):
+            return self.getToken(OneParser.Semicolon, 0)
+
+        def variable_name(self):
+            return self.getTypedRuleContext(OneParser.Variable_nameContext,0)
+
+
+        def Assign(self):
+            return self.getToken(OneParser.Assign, 0)
 
         def RightParen(self):
             return self.getToken(OneParser.RightParen, 0)
@@ -777,15 +779,8 @@ class OneParser ( Parser ):
             return self.getTypedRuleContext(OneParser.Variable_declarationContext,0)
 
 
-        def assignment(self, i:int=None):
-            if i is None:
-                return self.getTypedRuleContexts(OneParser.AssignmentContext)
-            else:
-                return self.getTypedRuleContext(OneParser.AssignmentContext,i)
-
-
-        def expression(self):
-            return self.getTypedRuleContext(OneParser.ExpressionContext,0)
+        def assignment(self):
+            return self.getTypedRuleContext(OneParser.AssignmentContext,0)
 
 
         def getRuleIndex(self):
@@ -812,51 +807,39 @@ class OneParser ( Parser ):
 
         localctx = OneParser.For_statementContext(self, self._ctx, self.state)
         self.enterRule(localctx, 14, self.RULE_for_statement)
-        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 94
-            self.match(OneParser.For)
             self.state = 95
+            self.match(OneParser.For)
+            self.state = 96
             self.match(OneParser.LeftParen)
-            self.state = 98
+            self.state = 99
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [31, 32, 33, 34]:
-                self.state = 96
+            if token in [23]:
+                self.state = 97
                 self.variable_declaration()
                 pass
-            elif token in [41]:
-                self.state = 97
+            elif token in [31]:
+                self.state = 98
                 self.assignment()
-                pass
-            elif token in [17]:
                 pass
             else:
-                pass
-            self.state = 100
-            self.match(OneParser.Semicolon)
+                raise NoViableAltException(self)
+
+            self.state = 101
+            self.expression()
             self.state = 102
-            self._errHandler.sync(self)
-            _la = self._input.LA(1)
-            if (((_la) & ~0x3f) == 0 and ((1 << _la) & 4123169128588) != 0):
-                self.state = 101
-                self.expression()
-
-
-            self.state = 104
             self.match(OneParser.Semicolon)
+            self.state = 103
+            self.variable_name()
+            self.state = 104
+            self.match(OneParser.Assign)
+            self.state = 105
+            self.expression()
             self.state = 106
-            self._errHandler.sync(self)
-            _la = self._input.LA(1)
-            if _la==41:
-                self.state = 105
-                self.assignment()
-
-
-            self.state = 108
             self.match(OneParser.RightParen)
-            self.state = 109
+            self.state = 107
             self.block()
         except RecognitionException as re:
             localctx.exception = re
@@ -876,6 +859,9 @@ class OneParser ( Parser ):
 
         def Return(self):
             return self.getToken(OneParser.Return, 0)
+
+        def Semicolon(self):
+            return self.getToken(OneParser.Semicolon, 0)
 
         def expression(self):
             return self.getTypedRuleContext(OneParser.ExpressionContext,0)
@@ -905,18 +891,21 @@ class OneParser ( Parser ):
 
         localctx = OneParser.Return_statementContext(self, self._ctx, self.state)
         self.enterRule(localctx, 16, self.RULE_return_statement)
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 111
+            self.state = 109
             self.match(OneParser.Return)
-            self.state = 113
+            self.state = 111
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,8,self._ctx)
-            if la_ == 1:
-                self.state = 112
+            _la = self._input.LA(1)
+            if (((_la) & ~0x3f) == 0 and ((1 << _la) & 4093640964) != 0):
+                self.state = 110
                 self.expression()
 
 
+            self.state = 113
+            self.match(OneParser.Semicolon)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -936,6 +925,9 @@ class OneParser ( Parser ):
         def expression(self):
             return self.getTypedRuleContext(OneParser.ExpressionContext,0)
 
+
+        def Semicolon(self):
+            return self.getToken(OneParser.Semicolon, 0)
 
         def getRuleIndex(self):
             return OneParser.RULE_expression_statement
@@ -965,6 +957,8 @@ class OneParser ( Parser ):
             self.enterOuterAlt(localctx, 1)
             self.state = 115
             self.expression()
+            self.state = 116
+            self.match(OneParser.Semicolon)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1021,19 +1015,19 @@ class OneParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 117
+            self.state = 118
             self.match(OneParser.LeftBrace)
-            self.state = 121
+            self.state = 122
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 4157293985932) != 0):
-                self.state = 118
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 4102963460) != 0):
+                self.state = 119
                 self.statement()
-                self.state = 123
+                self.state = 124
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
-            self.state = 124
+            self.state = 125
             self.match(OneParser.RightBrace)
         except RecognitionException as re:
             localctx.exception = re
@@ -1081,7 +1075,7 @@ class OneParser ( Parser ):
         self.enterRule(localctx, 22, self.RULE_expression)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 126
+            self.state = 127
             self.equality()
         except RecognitionException as re:
             localctx.exception = re
@@ -1106,17 +1100,11 @@ class OneParser ( Parser ):
                 return self.getTypedRuleContext(OneParser.ComparisonContext,i)
 
 
-        def Equal(self, i:int=None):
+        def EqualityOperation(self, i:int=None):
             if i is None:
-                return self.getTokens(OneParser.Equal)
+                return self.getTokens(OneParser.EqualityOperation)
             else:
-                return self.getToken(OneParser.Equal, i)
-
-        def NotEqual(self, i:int=None):
-            if i is None:
-                return self.getTokens(OneParser.NotEqual)
-            else:
-                return self.getToken(OneParser.NotEqual, i)
+                return self.getToken(OneParser.EqualityOperation, i)
 
         def getRuleIndex(self):
             return OneParser.RULE_equality
@@ -1145,22 +1133,17 @@ class OneParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 128
+            self.state = 129
             self.comparison()
-            self.state = 133
+            self.state = 134
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==8 or _la==9:
-                self.state = 129
-                _la = self._input.LA(1)
-                if not(_la==8 or _la==9):
-                    self._errHandler.recoverInline(self)
-                else:
-                    self._errHandler.reportMatch(self)
-                    self.consume()
+            while _la==24:
                 self.state = 130
+                self.match(OneParser.EqualityOperation)
+                self.state = 131
                 self.comparison()
-                self.state = 135
+                self.state = 136
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -1187,29 +1170,11 @@ class OneParser ( Parser ):
                 return self.getTypedRuleContext(OneParser.AdditionContext,i)
 
 
-        def Greater(self, i:int=None):
+        def ComparisonOperation(self, i:int=None):
             if i is None:
-                return self.getTokens(OneParser.Greater)
+                return self.getTokens(OneParser.ComparisonOperation)
             else:
-                return self.getToken(OneParser.Greater, i)
-
-        def Less(self, i:int=None):
-            if i is None:
-                return self.getTokens(OneParser.Less)
-            else:
-                return self.getToken(OneParser.Less, i)
-
-        def GreaterEqual(self, i:int=None):
-            if i is None:
-                return self.getTokens(OneParser.GreaterEqual)
-            else:
-                return self.getToken(OneParser.GreaterEqual, i)
-
-        def LessEqual(self, i:int=None):
-            if i is None:
-                return self.getTokens(OneParser.LessEqual)
-            else:
-                return self.getToken(OneParser.LessEqual, i)
+                return self.getToken(OneParser.ComparisonOperation, i)
 
         def getRuleIndex(self):
             return OneParser.RULE_comparison
@@ -1238,22 +1203,17 @@ class OneParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 136
+            self.state = 137
             self.addition()
-            self.state = 141
+            self.state = 142
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 15360) != 0):
-                self.state = 137
-                _la = self._input.LA(1)
-                if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 15360) != 0)):
-                    self._errHandler.recoverInline(self)
-                else:
-                    self._errHandler.reportMatch(self)
-                    self.consume()
+            while _la==25:
                 self.state = 138
+                self.match(OneParser.ComparisonOperation)
+                self.state = 139
                 self.addition()
-                self.state = 143
+                self.state = 144
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -1280,17 +1240,11 @@ class OneParser ( Parser ):
                 return self.getTypedRuleContext(OneParser.MultiplicationContext,i)
 
 
-        def Plus(self, i:int=None):
+        def AdditionOperation(self, i:int=None):
             if i is None:
-                return self.getTokens(OneParser.Plus)
+                return self.getTokens(OneParser.AdditionOperation)
             else:
-                return self.getToken(OneParser.Plus, i)
-
-        def Minus(self, i:int=None):
-            if i is None:
-                return self.getTokens(OneParser.Minus)
-            else:
-                return self.getToken(OneParser.Minus, i)
+                return self.getToken(OneParser.AdditionOperation, i)
 
         def getRuleIndex(self):
             return OneParser.RULE_addition
@@ -1319,25 +1273,19 @@ class OneParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 144
+            self.state = 145
             self.multiplication()
-            self.state = 149
+            self.state = 150
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input,12,self._ctx)
-            while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
-                if _alt==1:
-                    self.state = 145
-                    _la = self._input.LA(1)
-                    if not(_la==2 or _la==3):
-                        self._errHandler.recoverInline(self)
-                    else:
-                        self._errHandler.reportMatch(self)
-                        self.consume()
-                    self.state = 146
-                    self.multiplication() 
-                self.state = 151
+            _la = self._input.LA(1)
+            while _la==26:
+                self.state = 146
+                self.match(OneParser.AdditionOperation)
+                self.state = 147
+                self.multiplication()
+                self.state = 152
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,12,self._ctx)
+                _la = self._input.LA(1)
 
         except RecognitionException as re:
             localctx.exception = re
@@ -1362,23 +1310,11 @@ class OneParser ( Parser ):
                 return self.getTypedRuleContext(OneParser.UnaryContext,i)
 
 
-        def Asterisk(self, i:int=None):
+        def MultiplicationOperation(self, i:int=None):
             if i is None:
-                return self.getTokens(OneParser.Asterisk)
+                return self.getTokens(OneParser.MultiplicationOperation)
             else:
-                return self.getToken(OneParser.Asterisk, i)
-
-        def Slash(self, i:int=None):
-            if i is None:
-                return self.getTokens(OneParser.Slash)
-            else:
-                return self.getToken(OneParser.Slash, i)
-
-        def Percent(self, i:int=None):
-            if i is None:
-                return self.getTokens(OneParser.Percent)
-            else:
-                return self.getToken(OneParser.Percent, i)
+                return self.getToken(OneParser.MultiplicationOperation, i)
 
         def getRuleIndex(self):
             return OneParser.RULE_multiplication
@@ -1407,22 +1343,17 @@ class OneParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 152
+            self.state = 153
             self.unary()
-            self.state = 157
+            self.state = 158
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 112) != 0):
-                self.state = 153
-                _la = self._input.LA(1)
-                if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 112) != 0)):
-                    self._errHandler.recoverInline(self)
-                else:
-                    self._errHandler.reportMatch(self)
-                    self.consume()
+            while _la==27:
                 self.state = 154
+                self.match(OneParser.MultiplicationOperation)
+                self.state = 155
                 self.unary()
-                self.state = 159
+                self.state = 160
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -1446,11 +1377,8 @@ class OneParser ( Parser ):
             return self.getTypedRuleContext(OneParser.UnaryContext,0)
 
 
-        def Plus(self):
-            return self.getToken(OneParser.Plus, 0)
-
-        def Minus(self):
-            return self.getToken(OneParser.Minus, 0)
+        def AdditionOperation(self):
+            return self.getToken(OneParser.AdditionOperation, 0)
 
         def Bang(self):
             return self.getToken(OneParser.Bang, 0)
@@ -1485,24 +1413,24 @@ class OneParser ( Parser ):
         self.enterRule(localctx, 32, self.RULE_unary)
         self._la = 0 # Token type
         try:
-            self.state = 163
+            self.state = 164
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [2, 3, 7]:
+            if token in [2, 26]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 160
+                self.state = 161
                 _la = self._input.LA(1)
-                if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 140) != 0)):
+                if not(_la==2 or _la==26):
                     self._errHandler.recoverInline(self)
                 else:
                     self._errHandler.reportMatch(self)
                     self.consume()
-                self.state = 161
+                self.state = 162
                 self.unary()
                 pass
-            elif token in [19, 38, 39, 40, 41]:
+            elif token in [8, 28, 29, 30, 31]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 162
+                self.state = 163
                 self.primary()
                 pass
             else:
@@ -1572,36 +1500,36 @@ class OneParser ( Parser ):
         localctx = OneParser.PrimaryContext(self, self._ctx, self.state)
         self.enterRule(localctx, 34, self.RULE_primary)
         try:
-            self.state = 173
+            self.state = 174
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [38]:
+            if token in [28]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 165
+                self.state = 166
                 self.match(OneParser.BoolLiteral)
                 pass
-            elif token in [39]:
+            elif token in [29]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 166
+                self.state = 167
                 self.match(OneParser.NumberLiteral)
                 pass
-            elif token in [40]:
+            elif token in [30]:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 167
+                self.state = 168
                 self.match(OneParser.StringLiteral)
                 pass
-            elif token in [41]:
+            elif token in [31]:
                 self.enterOuterAlt(localctx, 4)
-                self.state = 168
+                self.state = 169
                 self.variable_name()
                 pass
-            elif token in [19]:
+            elif token in [8]:
                 self.enterOuterAlt(localctx, 5)
-                self.state = 169
-                self.match(OneParser.LeftParen)
                 self.state = 170
-                self.expression()
+                self.match(OneParser.LeftParen)
                 self.state = 171
+                self.expression()
+                self.state = 172
                 self.match(OneParser.RightParen)
                 pass
             else:
@@ -1623,12 +1551,11 @@ class OneParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def type_(self, i:int=None):
+        def Types(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(OneParser.TypeContext)
+                return self.getTokens(OneParser.Types)
             else:
-                return self.getTypedRuleContext(OneParser.TypeContext,i)
-
+                return self.getToken(OneParser.Types, i)
 
         def variable_name(self, i:int=None):
             if i is None:
@@ -1670,86 +1597,24 @@ class OneParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 175
-            self.type_()
             self.state = 176
+            self.match(OneParser.Types)
+            self.state = 177
             self.variable_name()
             self.state = 183
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==16:
-                self.state = 177
-                self.match(OneParser.Comma)
+            while _la==5:
                 self.state = 178
-                self.type_()
+                self.match(OneParser.Comma)
                 self.state = 179
+                self.match(OneParser.Types)
+                self.state = 180
                 self.variable_name()
                 self.state = 185
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
-        except RecognitionException as re:
-            localctx.exception = re
-            self._errHandler.reportError(self, re)
-            self._errHandler.recover(self, re)
-        finally:
-            self.exitRule()
-        return localctx
-
-
-    class TypeContext(ParserRuleContext):
-        __slots__ = 'parser'
-
-        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
-            super().__init__(parent, invokingState)
-            self.parser = parser
-
-        def Bool(self):
-            return self.getToken(OneParser.Bool, 0)
-
-        def Int(self):
-            return self.getToken(OneParser.Int, 0)
-
-        def Float(self):
-            return self.getToken(OneParser.Float, 0)
-
-        def String(self):
-            return self.getToken(OneParser.String, 0)
-
-        def getRuleIndex(self):
-            return OneParser.RULE_type
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterType" ):
-                listener.enterType(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitType" ):
-                listener.exitType(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitType" ):
-                return visitor.visitType(self)
-            else:
-                return visitor.visitChildren(self)
-
-
-
-
-    def type_(self):
-
-        localctx = OneParser.TypeContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 38, self.RULE_type)
-        self._la = 0 # Token type
-        try:
-            self.enterOuterAlt(localctx, 1)
-            self.state = 186
-            _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 32212254720) != 0)):
-                self._errHandler.recoverInline(self)
-            else:
-                self._errHandler.reportMatch(self)
-                self.consume()
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1792,10 +1657,10 @@ class OneParser ( Parser ):
     def variable_name(self):
 
         localctx = OneParser.Variable_nameContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 40, self.RULE_variable_name)
+        self.enterRule(localctx, 38, self.RULE_variable_name)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 188
+            self.state = 186
             self.match(OneParser.Identifier)
         except RecognitionException as re:
             localctx.exception = re

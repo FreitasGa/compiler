@@ -1,4 +1,4 @@
-# Generated from D:/Coding/python/compiler/One.g4 by ANTLR 4.13.1
+# Generated from C:/Users/gafre/Documents/Coding/python/compiler/One.g4 by ANTLR 4.13.1
 from antlr4 import *
 if "." in __name__:
     from .OneParser import OneParser
@@ -176,15 +176,6 @@ class OneListener(ParseTreeListener):
 
     # Exit a parse tree produced by OneParser#parameters.
     def exitParameters(self, ctx:OneParser.ParametersContext):
-        pass
-
-
-    # Enter a parse tree produced by OneParser#type.
-    def enterType(self, ctx:OneParser.TypeContext):
-        pass
-
-    # Exit a parse tree produced by OneParser#type.
-    def exitType(self, ctx:OneParser.TypeContext):
         pass
 
 
