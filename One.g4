@@ -6,40 +6,38 @@ And: '&&';
 Or: '||';
 Comma: ',';
 Semicolon: ';';
-Colon: ':';
 LeftParen: '(';
 RightParen: ')';
 LeftBrace: '{';
 RightBrace: '}';
-LeftBracket: '[';
-RightBracket: ']';
 If: 'if';
 Else: 'else';
 Function: 'function';
 Return: 'return';
 While: 'while';
 For: 'for';
+Main: 'main';
 Dot: '.';
 
 Whitespace: [ \t]+ -> skip;
 Newline: ( '\r'? '\n' | '\r' ) -> skip;
 
-Types: 'bool' | 'int' | 'float' | 'string';
+Type: 'bool' | 'int' | 'float' | 'string';
 
 EqualityOperation: '==' | '!=';
 ComparisonOperation: '>' | '<' | '>=' | '<=';
 AdditionOperation: '+' | '-';
 MultiplicationOperation: '*' | '/' | '%';
 
-BoolLiteral : 'true' | 'false';
-NumberLiteral : Digit+ (Dot Digit+)?;
-StringLiteral : '"' (~["\\] | EscapeSequence)* '"';
+BoolLiteral: 'true' | 'false';
+NumberLiteral: Digit+ (Dot Digit+)?;
+StringLiteral: '"' (~["\\] | EscapeSequence)* '"';
 
-Identifier : Letter (Letter | Digit)*;
-Digit : [0-9];
-Letter : [a-zA-Z];
+Identifier: Letter (Letter | Digit)*;
+Digit: [0-9];
+Letter: [a-zA-Z];
 
-EscapeSequence : '\\' [btnr"\\];
+EscapeSequence: '\\' [btnr"\\];
 
 
 program : statement* EOF;
@@ -53,23 +51,23 @@ statement : variable_declaration
           | return_statement
           | expression_statement;
 
-variable_declaration : Types variable_name (Assign expression)? Semicolon;
+variable_declaration : Type Identifier (Assign expression)? Semicolon;
 
-assignment : variable_name Assign expression Semicolon;
+assignment : Identifier Assign expression Semicolon;
 
-function_declaration : Types variable_name LeftParen parameters? RightParen block;
+function_declaration : Type (Identifier | Main) LeftParen parameters? RightParen LeftBrace statement* return_statement RightBrace;
 
-if_statement : If LeftParen expression RightParen block (Else block)?;
+if_statement : If LeftParen expression RightParen block (Else If LeftParen expression RightParen block)* (Else block)?;
 
 while_statement : While LeftParen expression RightParen block;
 
-for_statement : For LeftParen (variable_declaration | assignment) expression Semicolon variable_name Assign expression RightParen block;
+for_statement : For LeftParen (variable_declaration | assignment) expression Semicolon Identifier Assign expression RightParen block;
 
 return_statement : Return expression? Semicolon;
 
 expression_statement : expression Semicolon;
 
-block : LeftBrace statement* RightBrace;
+block : LeftBrace statement+ RightBrace;
 
 expression : equality;
 
@@ -86,10 +84,8 @@ unary : (AdditionOperation | Bang) unary | primary;
 primary : BoolLiteral
         | NumberLiteral
         | StringLiteral
-        | variable_name
+        | Identifier
         | LeftParen expression RightParen;
 
-parameters : Types variable_name (Comma Types variable_name)*;
-
-variable_name : Identifier;
+parameters : Type Identifier (Comma Type Identifier)*;
 

@@ -17,8 +17,10 @@ int main() {
 
     if (a <  b) {
         a = a + 1;
-    } else {
+    } else if (a > b) {
         a = a - 1;
+    } else {
+        a = b;
     }
 
     int x = 0;
