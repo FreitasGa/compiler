@@ -1,67 +1,95 @@
 grammar One;
 
-// Regras Léxicas
-TYPE_VAR: 'int' | 'float' | 'char' | 'void';
-IF: 'if';
-ELSE: 'else';
-FOR: 'for';
-WHILE: 'while';
-RETURN: 'return';
-ID: [a-zA-Z_][a-zA-Z0-9_]*;
-NUM_INT: [0-9]+;
-NUM_FLOAT: [0-9]+'.'[0-9]*;
-STRING: '"' ( ~["\\] | '\\' . )* '"';
-SEMI: ';';
-ASSIGN: '=';
-LPAREN: '(';
-RPAREN: ')';
-LBRACE: '{';
-RBRACE: '}';
-COMMA: ',';
-ADD: '+';
-SUB: '-';
-MUL: '*';
-DIV: '/';
-GT: '>';
-LT: '<';
-EQ: '==';
-NEQ: '!=';
-WS: [ \t\r\n]+ -> skip;
+Assign: '=';
+Bang: '!';
+And: '&&';
+Or: '||';
+Comma: ',';
+Semicolon: ';';
+Colon: ':';
+LeftParen: '(';
+RightParen: ')';
+LeftBrace: '{';
+RightBrace: '}';
+LeftBracket: '[';
+RightBracket: ']';
+If: 'if';
+Else: 'else';
+Function: 'function';
+Return: 'return';
+While: 'while';
+For: 'for';
+Dot: '.';
 
-// Regras Sintáticas
-program: (functionDecl | varDecl)*;
+Whitespace: [ \t]+ -> skip;
+Newline: ( '\r'? '\n' | '\r' ) -> skip;
 
-functionDecl: type ID LPAREN params? RPAREN compoundStmt;
+Types: 'bool' | 'int' | 'float' | 'string';
 
-params: param (COMMA param)*;
-param: type ID;
+EqualityOperation: '==' | '!=';
+ComparisonOperation: '>' | '<' | '>=' | '<=';
+AdditionOperation: '+' | '-';
+MultiplicationOperation: '*' | '/' | '%';
 
-type: TYPE_VAR;
+BoolLiteral : 'true' | 'false';
+NumberLiteral : Digit+ (Dot Digit+)?;
+StringLiteral : '"' (~["\\] | EscapeSequence)* '"';
 
-varDecl: type ID (ASSIGN expr)? SEMI;
+Identifier : Letter (Letter | Digit)*;
+Digit : [0-9];
+Letter : [a-zA-Z];
 
-compoundStmt: LBRACE stmt* RBRACE;
+EscapeSequence : '\\' [btnr"\\];
 
-stmt: exprStmt
-    | ifStmt
-    | forStmt
-    | whileStmt
-    | returnStmt
-    | compoundStmt;
 
-exprStmt: expr SEMI;
-expr: expr (ADD | SUB | MUL | DIV) expr
-    | ID ASSIGN expr
-    | NUM_INT
-    | NUM_FLOAT
-    | STRING
-    | ID
-    | LPAREN expr RPAREN;
+program : statement* EOF;
 
-ifStmt: IF LPAREN expr RPAREN stmt (ELSE stmt)?;
+statement : variable_declaration
+          | assignment
+          | function_declaration
+          | if_statement
+          | while_statement
+          | for_statement
+          | return_statement
+          | expression_statement;
 
-forStmt: FOR LPAREN exprStmt? expr? SEMI expr? RPAREN stmt;
+variable_declaration : Types variable_name (Assign expression)? Semicolon;
 
-whileStmt: WHILE LPAREN expr RPAREN stmt;
+assignment : variable_name Assign expression Semicolon;
 
-returnStmt: RETURN expr? SEMI;
+function_declaration : Types variable_name LeftParen parameters? RightParen block;
+
+if_statement : If LeftParen expression RightParen block (Else block)?;
+
+while_statement : While LeftParen expression RightParen block;
+
+for_statement : For LeftParen (variable_declaration | assignment) expression Semicolon variable_name Assign expression RightParen block;
+
+return_statement : Return expression? Semicolon;
+
+expression_statement : expression Semicolon;
+
+block : LeftBrace statement* RightBrace;
+
+expression : equality;
+
+equality : comparison (EqualityOperation comparison)*;
+
+comparison : addition (ComparisonOperation addition)*;
+
+addition : multiplication (AdditionOperation multiplication)*;
+
+multiplication : unary (MultiplicationOperation unary)*;
+
+unary : (AdditionOperation | Bang) unary | primary;
+
+primary : BoolLiteral
+        | NumberLiteral
+        | StringLiteral
+        | variable_name
+        | LeftParen expression RightParen;
+
+parameters : Types variable_name (Comma Types variable_name)*;
+
+variable_name : Identifier;
+
