@@ -55,9 +55,9 @@ variable_declaration : Type Identifier (Assign expression)? Semicolon;
 
 assignment : Identifier Assign expression Semicolon;
 
-function_declaration : Type (Identifier | Main) LeftParen parameters? RightParen LeftBrace statement* return_statement RightBrace;
+function_declaration : Type (Identifier | Main) LeftParen parameters? RightParen LeftBrace statement* RightBrace;
 
-if_statement : If LeftParen expression RightParen block (Else If LeftParen expression RightParen block)* (Else block)?;
+if_statement : If LeftParen expression RightParen block (Else block)?;
 
 while_statement : While LeftParen expression RightParen block;
 
@@ -67,7 +67,7 @@ return_statement : Return expression? Semicolon;
 
 expression_statement : expression Semicolon;
 
-block : LeftBrace statement+ RightBrace;
+block : LeftBrace statement* RightBrace;
 
 expression : equality;
 
